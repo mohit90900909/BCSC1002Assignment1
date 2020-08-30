@@ -1,6 +1,6 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
+ *  User: Mohit Singh (191500459) | 60
+ *  Date: 30/08/20
  *  Time: 3:49 PM
  *  File Name : Student.java
  * */
@@ -25,17 +25,27 @@ public class Student {
         universityRollNumber = rollNumber;
     }
 
+    /**
+     * This method adds the book issued by the student to the books issued arraylist
+     *
+     * @param book is the book issued
+     */
     public static void issueBook(String book) {
         booksIssued.add(book);
         totalBooksIssued++;
     }
 
-    public static ArrayList<String> booksIssued() {
+    public static ArrayList<String> getBooksIssued() {
         return booksIssued;
     }
 
+    /**
+     * This method removes the book returned from the books issued arraylist
+     *
+     * @param bookName is the name of the book returned
+     */
     public static void returnBook(String bookName) {
-        if (booksIssued().contains(bookName)) {
+        if (getBooksIssued().contains(bookName)) {
             booksIssued.remove(bookName);
             totalBooksIssued--;
             System.out.println(bookName + " returned successfully");

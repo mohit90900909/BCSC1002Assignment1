@@ -1,6 +1,6 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
+ *  User: Mohit Singh (191500459) | 60
+ *  Date: 30/08/20
  *  Time: 3:50 PM
  *  File Name : FrontDesk.java
  * */
@@ -62,7 +62,7 @@ public class FrontDesk {
                     System.out.println("Total Books issued by " + Student.getStudentName() + " are " + Student.getTotalBooksIssued());
                     if (Student.getTotalBooksIssued() != 0) {
                         System.out.println("The books are: ");
-                        for (String books : Student.booksIssued()) {
+                        for (String books : Student.getBooksIssued()) {
                             System.out.println(books);
                         }
                     }
